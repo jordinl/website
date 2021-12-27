@@ -56,7 +56,6 @@ typings/
 
 # gatsby files
 .cache/
-public
 
 # Mac files
 .DS_Store
@@ -73,3 +72,4 @@ yarn-error.log
 build
 
 .vercel
+.next

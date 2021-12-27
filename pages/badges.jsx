@@ -1,16 +1,16 @@
-/**@jsx jsx */
-
-import { css, jsx } from '@emotion/react'
-
 export function Badges() {
   return (
-    <div
-      css={css({
-        display: 'flex',
-        flexWrap: 'wrap',
-        a: { marginRight: '5px' },
-      })}
-    >
+    <div className="badge">
+      <style jsx>{`
+        .badge {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 15px;
+          a {
+            margin-right: 5px;
+          }
+        }
+      `}</style>
       <a href="https://docs.rs/crate/napi" target="_blank" rel="noreferrer">
         <img src="https://docs.rs/napi/badge.svg" alt="rust doc" />
       </a>
@@ -52,22 +52,25 @@ export function Badges() {
       <a
         target="_blank"
         rel="noreferrer"
+        id="sponsor"
         href="https://github.com/sponsors/Brooooooklyn?o=esb"
-        css={css({
-          display: 'flex',
-          borderRadius: '3px',
-          background: 'white',
-          alignItems: 'center',
-          fontSize: '12px',
-          color: 'black',
-          padding: '0 5px',
-          height: '20px',
-          svg: {
-            fill: '#ea4aaa',
-            marginRight: '5px',
-          },
-        })}
       >
+        <style>{`
+          #sponsor {
+            display: flex;
+            border-radius: 3px;
+            background: white;
+            align-items: center;
+            font-size: 12px;
+            color: black;
+            padding: 0 5px;
+            height: 20px;
+          }
+          #sponsor svg {
+            fill: #ea4aaa;
+            margin-right: 5px;
+          }
+        `}</style>
         <svg
           height="16"
           viewBox="0 0 16 16"

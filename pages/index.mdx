@@ -1,18 +1,11 @@
-import { NodeJS, Rust } from '../lang'
-import { Badges } from '../badges'
-
-<p>
-  <span style={{ fontSize: '24px', fontWeight: 'bold' }}>NAPI-RS</span> is a
-  minimal library for building pre-compiled <NodeJS /> addons in <Rust />.
-</p>
+import { Badges } from './badges'
 
 <Badges />
-
 <br />
 
 ## Rustify Node.js in few lines!
 
-```rust title=lib.rs
+```rust
 use napi_derive::napi;
 
 #[napi]
@@ -52,20 +45,55 @@ console.log(fibonacci(5))
 
 ### Well tested
 
-![Lint](https://github.com/napi-rs/napi-rs/workflows/Lint/badge.svg)
-![Linux N-API@3](https://github.com/napi-rs/napi-rs/workflows/Linux%20N-API@3/badge.svg)
-![Linux musl](https://github.com/napi-rs/napi-rs/workflows/Linux%20musl/badge.svg)
-![macOS/Windows/Linux x64](https://github.com/napi-rs/napi-rs/workflows/macOS/Windows/Linux%20x64/badge.svg)
-![Linux-aarch64](https://github.com/napi-rs/napi-rs/workflows/Linux-aarch64/badge.svg)
-![Linux-armv7](https://github.com/napi-rs/napi-rs/workflows/Linux-armv7/badge.svg)
-![macOS-Android](https://github.com/napi-rs/napi-rs/workflows/macOS-Android/badge.svg)
-![Windows i686](https://github.com/napi-rs/napi-rs/workflows/Windows%20i686/badge.svg)
-[![Windows arm64](https://github.com/napi-rs/napi-rs/actions/workflows/windows-arm.yml/badge.svg)](https://github.com/napi-rs/napi-rs/actions/workflows/windows-arm.yml)
-[![FreeBSD](https://api.cirrus-ci.com/github/napi-rs/napi-rs.svg)](https://cirrus-ci.com/github/napi-rs/napi-rs?branch=main)
+<p className="test-badges">
+  <style jsx>{`
+    .test-badges {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  `}</style>
+  <img src="https://github.com/napi-rs/napi-rs/workflows/Lint/badge.svg" />
+  <img
+    alt="Linux N-API@3"
+    src="https://github.com/napi-rs/napi-rs/workflows/Linux%20N-API@3/badge.svg"
+  />
+  <img
+    alt="Linux musl"
+    src="https://github.com/napi-rs/napi-rs/workflows/Linux%20musl/badge.svg"
+  />
+  <img
+    alt="macOS/Windows/Linux x64"
+    src="https://github.com/napi-rs/napi-rs/workflows/macOS/Windows/Linux%20x64/badge.svg"
+  />
+  <img
+    alt="Linux-aarch64"
+    src="https://github.com/napi-rs/napi-rs/workflows/Linux-aarch64/badge.svg"
+  />
+  <img
+    alt="Linux-armv7"
+    src="https://github.com/napi-rs/napi-rs/workflows/Linux-armv7/badge.svg"
+  />
+  <img
+    alt="macOS-Android"
+    src="https://github.com/napi-rs/napi-rs/workflows/macOS-Android/badge.svg"
+  />
+  <img
+    alt="Windows i686"
+    src="https://github.com/napi-rs/napi-rs/workflows/Windows%20i686/badge.svg"
+  />
+  <img
+    alt="Windows arm64"
+    src="https://github.com/napi-rs/napi-rs/actions/workflows/windows-arm.yml/badge.svg"
+  />
+  <img
+    alt="FreeBSD"
+    src="https://api.cirrus-ci.com/github/napi-rs/napi-rs.svg"
+  />
+</p>
 
 ## Ecosystem
 
-<p align="left" style={{ width: '70vw' }}>
+<p align="left" style={{ maxWidth: '70vw', display: 'flex' }}>
   <a href="https://www.prisma.io/" target="_blank">
     <svg
       height="50"
@@ -88,7 +116,7 @@ console.log(fibonacci(5))
     <img
       alt="swc"
       src="https://raw.githubusercontent.com/swc-project/logo/master/swc.png"
-      height="50"
+      style={{ height: '50px' }}
     />
   </a>
   &nbsp; &nbsp;
@@ -96,15 +124,15 @@ console.log(fibonacci(5))
     <img
       alt="Parcel"
       src="https://user-images.githubusercontent.com/19409/31321658-f6aed0f2-ac3d-11e7-8100-1587e676e0ec.png"
-      height="50"
+      style={{ height: '50px' }}
     />
   </a>
   &nbsp; &nbsp;
-  <a href="https://nextjs.org/">
+  <a href="https://nextjs.org/" style={{ display: 'flex' }}>
     <img
       alt="next.js"
       src="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
-      height="50px"
+      style={{ height: '50px' }}
     />
     &nbsp;
     <svg
