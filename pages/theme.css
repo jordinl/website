@@ -1,0 +1,15 @@
+html {
+  --napi-rs-color-primary: #25c2a0;
+  --napi-rs-color-primary-dark: rgb(33, 175, 144);
+  --napi-rs-color-primary-darker: rgb(31, 165, 136);
+  --napi-rs-color-primary-darkest: rgb(26, 136, 112);
+  --napi-rs-color-primary-light: rgb(70, 203, 174);
+  --napi-rs-color-primary-lighter: rgb(102, 212, 189);
+  --napi-rs-color-primary-lightest: rgb(146, 224, 208);
+  --napi-rs-code-font-size: 95%;
+  --napi-rs-svg-fill: black;
+}
+
+html.dark {
+  --napi-rs-svg-fill: white;
+}

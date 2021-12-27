@@ -12,9 +12,14 @@ export default {
   logo: (
     <>
       <img width={42} src="./img/favicon.png" alt="NAPI-RS" />
-      <span style={{ marginLeft: '20px', color: 'grey' }}>
+      <span style={{ marginLeft: '20px' }}>
         A{' '}
-        <span style={{ fontWeight: 'bolder', color: 'black' }}>framework</span>{' '}
+        <span
+          className="mx-2 font-extrabold hidden md:inline select-none"
+          style={{ fontWeight: 'bolder' }}
+        >
+          framework
+        </span>{' '}
         for building compiled Node.js add-ons in{' '}
         <span style={{ color: '#b7410e', fontWeight: 'bold' }}>Rust</span> via
         <span style={{ color: '#3C873A', fontWeight: 'bold' }}> Node-API</span>.
